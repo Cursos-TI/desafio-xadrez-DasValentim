@@ -30,5 +30,19 @@ int main() {
         cont_rainha++;
     } while(cont_rainha < 8);
 
+    // Movimento do Cavalo: em L para baixo e esquerda (usando loops aninhados)
+    printf("Movimento do Cavalo (em L para baixo e esquerda):\n");
+    // Loop externo (for) controla a parte horizontal do L (1 casas para esquerda)
+    for(int i = 0; i < 1; i++) {
+        // Loop interno (while) controla a parte vertical do L (2 casa para baixo)
+        int cont_cavalo = 0;
+        while(cont_cavalo < 2){
+            printf("Baixo\n");
+            cont_cavalo++;
+        }
+        printf("Esquerda\n");
+        printf("\n");
+    }
+
     return 0;
 }
